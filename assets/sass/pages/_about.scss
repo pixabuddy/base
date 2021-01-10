@@ -1,0 +1,241 @@
+// Default page route
+
+.page-route {
+  padding-bottom: 0;
+  padding-top: 4rem;
+
+  &_box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    &-text {
+      font-family: $para-roman;
+      font-size: 1.6rem;
+      color: $color-primary-dark;
+
+      &_devider {
+        padding: 0 14px;
+      }
+
+      &_current-location {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+/* =============================================== */
+/* =================== Section about details part =================== */
+/* =============================================== */
+
+.section-about_details {
+  padding-top: 0;
+
+  &-big-text-box {
+    @include flex-row_center;
+    margin-top: -14px;
+
+    p {
+      font-family: $heading-bold;
+      font-size: 15rem;
+      color: rgba($color-primary-light, 0.6);
+      letter-spacing: -5px;
+      -webkit-user-select: none;
+
+      @include respond(big-desktop) {
+        font-size: 12.5rem;
+      }
+
+      @include respond(tab-land) {
+        font-size: 12.5rem;
+        letter-spacing: -2px;
+      }
+
+      @include respond(tab-port) {
+        font-size: 11.5rem;
+        letter-spacing: -3px;
+      }
+
+      @include respond(phone) {
+        font-size: 5.5rem;
+        letter-spacing: -2px;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  .main-details {
+    margin-top: -9rem;
+
+    @include respond(tab-land) {
+      margin-top: -8rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: -6.5rem;
+    }
+
+    @include respond(phone) {
+      margin-top: -3rem;
+    }
+
+    &_left {
+      width: 100%;
+      height: 380px;
+      @include flex-row_center;
+
+      @include respond(tab-land) {
+        height: 340px;
+      }
+
+      @include respond(tab-port) {
+        height: 300px;
+      }
+
+      @include respond(phone) {
+        height: 220px;
+      }
+
+      img {
+        height: 100%;
+        width: auto;
+
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+      }
+    }
+
+    &_right {
+
+      @include respond(phone) {
+        margin-top: 5rem;
+      }
+
+      .heading-tertiary {
+        margin-bottom: 2.3rem;
+        text-transform: uppercase;
+        letter-spacing: -0.02px;
+
+        @include respond(phone) {
+          font-size: 2.8rem !important;
+        }
+      }
+
+      .paragraph {
+        width: 90%;
+        text-align: justify;
+
+        @include respond(phone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .sub-details {
+    margin-top: 2rem;
+
+    @include respond(tab-land) {
+      margin-top: 3rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 6.5rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 5px;
+    }
+
+    &_left {
+      margin-top: 4.6rem;
+
+      &-text {
+        font-family: $para-roman;
+        font-size: 1.6rem;
+        color: $color-primary-medium-dark;
+        letter-spacing: 0.5px;
+        margin: 1.6rem 0;
+
+        span {
+          font-size: 1.8rem;
+          margin-right: 1.2rem;
+          color: $color-primary;
+        }
+      }
+    }
+
+    &_right {
+      width: 100%;
+      height: auto;
+      margin-top: -10rem;
+
+      @include flex-row;
+      justify-content: center;
+      align-items: flex-end;
+
+      @include respond(phone) {
+        margin-top: 4rem;
+      }
+
+      &-main {
+        width: 85%;
+
+        .education-details {
+          @include flex-column;
+
+          &_name {
+            font-size: 1.6rem;
+            font-family: $para-medium;
+            color: rgba($color-primary, 1);
+            margin-top: 1.5rem;
+
+            @include respond(phone) {
+              margin-top: 2.2rem;
+            }
+
+            &-status {
+              font-family: $para-book;
+              font-size: 1.4rem;
+              display: block;
+              color: $color-primary-medium-dark;
+              margin-top: 6px;
+            }
+          }
+        }
+      }
+
+      &-corner {
+        width: 15%;
+
+        @include flex-column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        .about-top_social {
+          @include flex-column;
+          align-items: center;
+
+          &-link {
+            margin-top: 2.2rem;
+            font-size: 1.8rem;
+            -webkit-user-select: none;
+
+            &:link,
+            &:visited {
+              text-decoration: none;
+              color: $color-primary-medium-dark;
+            }
+
+            &:hover,
+            &:active {
+              text-decoration: none;
+              color: $color-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
