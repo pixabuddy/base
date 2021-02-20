@@ -1,0 +1,148 @@
+/*
+
+0 - 375px;         Small Phone
+375 - 600px;       Phone
+600 - 900px;       Table potrait
+900 - 1200px;      Table landscape
+1200 - 1650px ( is where the normal style is applies )
+1200 - 1800+ px;   Big desktop
+
+$breakpoint arguement choices :
+
+- sm-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ ORDER: Base + Typography > genarel layout + grid > page layout > components
+
+*/
+/* ============================================ */
+/* ================ universal selector adjustment ================ */
+/* ============================================ */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+/* ============================================ */
+/* ================ html font size adjustment ================ */
+/* ============================================ */
+html {
+  scroll-behavior: smooth;
+  font-size: 10px; }
+  @media only screen and (max-width: 375px) {
+    html {
+      font-size: 8px !important; } }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 9px; } }
+  @media only screen and (max-width: 900px) {
+    html {
+      font-size: 8px; } }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 9px; } }
+  @media only screen and (min-width: 1650px) {
+    html {
+      font-size: 12px; } }
+
+/* ============================================ */
+/* ================ body customization ================ */
+/* ============================================ */
+body {
+  box-sizing: border-box;
+  background-color: #fff !important; }
+
+/* ============================================ */
+/* ================ section padding ================ */
+/* ============================================ */
+section {
+  padding: 9rem 0; }
+  @media only screen and (max-width: 1200px) {
+    section {
+      padding: 6.5rem 0; } }
+  @media only screen and (max-width: 900px) {
+    section {
+      padding: 5.5rem 0; } }
+  @media only screen and (max-width: 600px) {
+    section {
+      padding: 6.5rem 12px; } }
+
+/* ============================================ */
+/* ================ no gutters for row ================ */
+/* ============================================ */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }
+
+/* ============================================ */
+/* ================ customize selection ================ */
+/* ============================================ */
+::selection {
+  background-color: #142CD6;
+  color: #fff; }
+
+body {
+  font-family: Poppins, sans-serif !important;
+  font-weight: 200;
+  letter-spacing: .04rem;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #C9C9C9; }
+
+.heading {
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-main {
+    display: block;
+    color: #000000;
+    font-family: Poppins;
+    letter-spacing: -1.3px;
+    font-size: 5.2rem;
+    word-spacing: 5px; }
+    @media only screen and (min-width: 1650px) {
+      .heading-main {
+        font-size: 4.5rem; } }
+    @media only screen and (max-width: 900px) {
+      .heading-main {
+        font-size: 4.2rem; } }
+    @media only screen and (max-width: 600px) {
+      .heading-main {
+        font-size: 3.8rem; } }
+    .heading-main span {
+      color: #142CD6; }
+
+.paragraph {
+  font-size: 1.6rem;
+  color: #7b7b7b;
+  letter-spacing: .1px;
+  line-height: 2.8rem; }
+  @media only screen and (max-width: 1200px) {
+    .paragraph {
+      line-height: 2.7rem; } }
+  @media only screen and (max-width: 600px) {
+    .paragraph {
+      line-height: 2.9rem; } }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+/* ============================================ */
+/* ================ footer part ================ */
+/* ============================================ */
+/* ============================================ */
+/* ================ header part ================ */
+/* ============================================ */
+/* ============================================ */
+/* ================ banner part ================ */
+/* ============================================ */

@@ -1,52 +1,45 @@
 // ======== COLORS
 
-$color-primary: #00CEFE;  
-$color-primary-supporting: #00C0EB; 
-$color-primary-light:#EAF7F9;
-$color-primary-medium:#BEE9E8;
-$color-primary-medium-dark: #16697A;
-$color-primary-dark: #18191A;
+$color-primary: #142CD6;
+$color-primary-bg-light: #eceefd;
+$color-primary-medium: #d5dafc;
+$color-primary-dark: #000000;
+  
+$color-secondary: #ed0f69; 
+$color-secondary-bg-light: #FDDCE9;
 
+// Color pairs
+$c-pair-1: #5C9AD9;
+$c-pair-1-light: #e3f7ff;
+
+$c-pair-2: #f3726f;
+$c-pair-2-light: #ffeae2;
+
+$c-pair-3: #f7b337;
+$c-pair-3-light: #fffad1;
+
+$c-pair-4: #3cae6c;
+$c-pair-4-light: #ddffeb;
+
+// colors for text
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #E8E8E8;
 
 $color-grey-dark: #C9C9C9;
 $color-grey-dark-2: #7b7b7b;
 
+$db-para: #585858;
 
 $color-white: #fff;
-$color-black: #000;
+$color-black: $color-primary-dark;
 
 
 // ========== FONT size
 
-$default-font-size: 1.6rem;
+$d-font-size: 1.6rem;
 
 // ========== FONT Family
 
 // for heading font
+$font-main: Poppins;
 
-$heading-black: Cera-Black;
-$heading-bold: Cera-Bold;
-$heading-medium: Cera-Medium;
-$heading-regular: Cera-Regular;
-$heading-regular-italic: Cera-Regular-Italic;
-$heading-light: Cera-Light;
-
-// for default or paragraph font
-
-$para-medium: Avenir-Medium;
-$para-book: Avenir-Book;
-$para-roman: Avenir-Roman;
-
-// ========== GRID & GUTTER
-
-$grid-width: 114rem;
-
-$gutter-vertical: 8rem;
-$gutter-vertical-medium: 6rem;
-$gutter-vertical-small: 5rem;
-$gutter-vertical-very-small: 3rem;
-
-$gutter-horizontal: 6rem;
-$gutter-horizontal-small: 4rem;
