@@ -1,0 +1,111 @@
+/*
+
+0 - 350px;         Small Phone
+350 - 600px;       Phone
+600 - 900px;       Table potrait
+900 - 1200px;      Table landscape
+1200 - 1800px ( is where the normal style is applies )
+1200 - 1800+ px;   Big desktop
+
+$breakpoint arguement choices :
+
+- sm-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ ORDER: Base + Typography > genarel layout + grid > page layout > components
+
+*/
+/* ============================================ */
+/* ================ universal selector adjustment ================ */
+/* ============================================ */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* ============================================ */
+/* ================ html font size adjustment ================ */
+/* ============================================ */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+/* ============================================ */
+/* ================ body customization ================ */
+/* ============================================ */
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff !important;
+  font-family: 'Metropolis', sans-serif !important;
+  font-weight: 400;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body button,
+body button:focus {
+  outline: none;
+}
+
+/* ============================================ */
+/* ================ section padding ================ */
+/* ============================================ */
+section {
+  padding: 9rem 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  section {
+    padding: 6.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section {
+    padding: 5.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 6.5rem 12px;
+  }
+}
+
+/* ============================================ */
+/* ================ no gutters for row ================ */
+/* ============================================ */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^='col-'],
+.row.no-gutters > [class*=' col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* ============================================ */
+/* ================ customize selection ================ */
+/* ============================================ */
+::-moz-selection {
+  background-color: #000000;
+  color: #fff;
+}
+::selection {
+  background-color: #000000;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
